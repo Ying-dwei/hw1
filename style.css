@@ -1,0 +1,152 @@
+/*
+整體寬 960px
+Logo: http://i.imgur.com/pHyusTb.png
+登入小人: http://i.imgur.com/HxSb8GP.png
+選單 15px
+*/
+
+header{
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1{
+  float: left;
+}
+
+ul.ul1{
+  float: left;
+  list-style-type: none;
+  
+  margin-top: 5em;
+}
+/* 讓ul裡的東西float */
+li.li1{
+  float: left;
+  margin-left: 3em;
+}
+
+div.div1{
+  float: right;
+  margin-right: 50px;
+  margin-top: 5em;
+}
+
+/*
+手機圖 http://i.imgur.com/DH1JUY1.png
+下陰影 http://i.imgur.com/qHFBqbU.png
+
+標題 40px
+內文 20px
+價錢 24px
+
+按鈕 128x33, #fe8511 -> #dc5608
+*/
+
+section.sec1{
+	top: 150px;
+  /* float:left; */
+  width: 960px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+  font-size: 20px;
+  
+  background: url(http://i.imgur.com/qHFBqbU.png) no-repeat center bottom;
+  /* 不重複，並且，會在中間 */
+}
+
+section .phone{
+
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+div.div2{
+  position: absolute;
+  top: 80px;
+  left: 500px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+ul.ul2{
+  list-style-type: none;
+  padding-left: 0;
+  /* padding-left這0，可以讓前面空白不見。 */
+}
+
+.price{
+  font-size: 24px;
+}
+
+button{
+	color: #fff;
+  padding: 10px 40px;
+  /* 先上下再左右 */
+  border: 0;
+  /* 這是不要框線 */
+  border-radius: 150px;
+  background: -webkit-linear-gradient(top, #fe8511 0%,#dc5608 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #fe8511 0%,#dc5608 100%); /* W3C */
+}
+
+
+
+section.sec2{
+	top:250px;
+	position: relative;
+	width: 960px;
+	margin: 1em auto;
+}
+
+h3, ul, .cover{
+  /* float: left; */
+	display:inline-block;
+	vertical-align:top;
+  
+  }
+
+
+h3{
+  font-size: 40px;
+  border: 3px #ccc double;
+  padding: 40px 15px;
+  width: 1em;
+  /* 一個字的大小就能上下排 */
+  line-height: 1.3;
+  margin: 0;
+  margin-right: 16px;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+p{
+  clear: both;
+  text-align: center;
+}
+
+figure{
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+}
+
+li figure{
+  border-top-width:0;
+}
+
+li:first-child figure{
+  border-top-width: 1px;
+}
+/* 去頂一個高度 */
+
